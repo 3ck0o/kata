@@ -6,6 +6,8 @@ body {
 
 #content {
     max-width: 1024px;
+    padding-left: 10px;
+    padding-right: 15px;
 }
 
 a {
@@ -28,6 +30,37 @@ a:hover {
     opacity: 0.7;
     font-style: italic;
     font-size: 0.9em;
-    width:100%;
+    width: 100%;
     text-align: right;
+}
+
+form input[type="button"], form input[type="submit"] {
+    padding: 0;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #d0d0d0;
+    transition: 0.3s;
+}
+
+form input[type="text"]:hover, form textarea:hover {
+    border-color: #d0ab8a;
+}
+
+form input[type="button"]:hover, form input[type="submit"]:hover {
+    color: #e49c27;
 }

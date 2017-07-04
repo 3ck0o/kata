@@ -4,10 +4,28 @@ body {
     background-color: #fafafa;
 }
 
-#content {
+body div.content {
     max-width: 1024px;
     padding-left: 10px;
     padding-right: 15px;
+    padding-bottom: 25px;
+}
+
+body div.content .title {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+body div.content .menu {
+    display: inline-block;
+}
+
+body div.content .menu a {
+    display: inline-block;
+    border-left: 2px solid #e2e2e2;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
@@ -20,13 +38,26 @@ a:hover {
     color: #e46121;
 }
 
-.subject {
-    padding: 5px 25px;
-    background-color: #f6ead2;
-    border-left: 15px solid #eac494;
+.kata {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.author {
+.kata .content {
+    padding: 15px 25px;
+    background-color: white;
+    border-left: 10px solid rgb(191, 200, 144);
+}
+
+.kata .content a {
+    color: #abc84e;
+}
+
+.kata .content a:hover {
+    color: #5a7e1f;
+}
+
+.kata .author {
     opacity: 0.7;
     font-style: italic;
     font-size: 0.9em;
@@ -34,13 +65,38 @@ a:hover {
     text-align: right;
 }
 
+.warning {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    background-color: #f6ead2;
+    border-left: 10px solid #eac494;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    background-color: rgba(221, 238, 240, 0.4);
+    border-left: 10px solid #a2e1ea;
+}
+
+.info a {
+    color: #a1c7d9;
+}
+
+.info a:hover {
+    color: #5b94b3;
+}
+
 form input[type="button"], form input[type="submit"] {
-    padding: 0;
-    border: none;
+    padding: 5px;
     margin-top: 6px;
     margin-bottom: 6px;
-    background-color: transparent;
-    font-size: 0.8em;
+    background-color: #fffdf5;
+    border: 1px solid #ffedd4;
+    color: #eec580;
+    transition: 0.3s;
 }
 
 form textarea {
@@ -48,19 +104,39 @@ form textarea {
     resize: vertical;
 }
 
-form input[type="text"], form textarea {
+form input[type="text"], form input[type="url"], form textarea {
     width: 100%;
     padding: 5px;
     margin-top: 6px;
     margin-bottom: 6px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #f1f1f1;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
-form input[type="text"]:hover, form textarea:hover {
+form input[type="text"]:hover, form input[type="url"]:hover, form textarea:hover {
     border-color: #d0ab8a;
 }
 
-form input[type="button"]:hover, form input[type="submit"]:hover {
+form input[type="button"]:hover,
+form input[type="submit"]:hover {
     color: #e49c27;
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+    border-left: 10px solid #d6d6d6;
+    background-color: white;
+    margin-left:0;
+    margin-right:0;
+    padding: 15px 25px;
+}
+
+legend {
+    padding: 10px 35px 10px 25px;
+    background-color: white;
+    color: #4c4c4c;
+    margin-left: -35px;
+    border-left: 10px solid #d6d6d6;
 }

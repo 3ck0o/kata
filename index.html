@@ -10,53 +10,78 @@
 </head>
 
 <body>
-<div id="content">
-    <h1>We love code Katas</h1>
+<div class="content">
+    <h1 class="title">We love code Katas</h1>
 
-    <p class="menu">[<a href="#">Submit new Kata</a>] [<a href="#">Old Katas</a>] [<a href="#">Send answer</a>]</p>
+    <div class="menu"><a href="submit.html">Submit Kata</a><a href="history.html">Old Katas</a></div>
 
-    <strong>Subject of the week :</strong> (Every wednesday, a new Kata)
-    <div class="subject">
-        <h2>HTML Ipsum Presents</h2>
+    <div class="info">
+        Every wednesday, a new <a href="https://en.wikipedia.org/wiki/Kata_(programming)" target="_blank">kata</a> is
+        selected randomly from a list of subjects posted by users. Choose the language of your choice and post your
+        solution. Your solution will be available for everyone as soon as the new kata is online. You can also post a
+        solution for an <a href="#">old one</a>.
+    </div>
 
-        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
-            egestas.
-            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-            egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est
-            et
-            sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit
-            amet,
-            wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim
-            ac
-            dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    <div class="kata">
+        <div class="title"></div>
+        <div class="content">
+            <h2>HTML Ipsum Presents</h2>
 
-        <h3>Header Level 2</h3>
+            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
+                egestas.
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                quam
+                egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet
+                est
+                et
+                sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare
+                sit
+                amet,
+                wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus
+                enim
+                ac
+                dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ol>
+            <h3>Header Level 2</h3>
 
-        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
-            aliquet
-            congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis,
-            tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-        </blockquote>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+            </ol>
 
-        <h4>Header Level 3</h4>
+            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
+                aliquet
+                congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+                mollis,
+                tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+            </blockquote>
 
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
+            <h4>Header Level 3</h4>
 
-        <pre><code class="language-css">#header h1 a {
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+            </ul>
+
+            <pre><code class="language-css">#header h1 a {
   display: block;
   width: 300px;
   height: 80px;
 } </code></pre>
+        </div>
+        <div class="author">Submitted by <a href="#">3ck0</a></div>
     </div>
-    <div class="author">Submitted by <a href="#">3ck0</a></div>
+
+    <form>
+        <fieldset>
+            <legend>Post an answer</legend>
+            <input name="language" type="text" placeholder="Language"/>
+            <textarea name="kata" placeholder="Paste code here"></textarea>
+            <input name="username" type="text" placeholder="Username"/>
+            <input name="website" type="url" placeholder="Website"/>
+            <input type="submit"/>
+        </fieldset>
+    </form>
 
     <!-- Scripts -->
     <script src="js/prism.js"></script>

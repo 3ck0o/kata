@@ -10,16 +10,25 @@
 </head>
 
 <body>
-<div id="content">
-    <h1>Submit a Kata</h1>
+<div class="content">
+    <h1 class="title">Submit a Kata</h1>
 
-    <p class="menu">[<a href="#">Kata of the week</a>] [<a href="#">Old Katas</a>] [<a href="#">Send answer</a>]</p>
+    <div class="menu"><a href="index.html">Kata of the week</a><a href="history.html">Old Katas</a></div>
 
-    <form>
+    <div class="info">
+        You can write a kata using the <a href="https://daringfireball.net/projects/markdown/syntax" target="_blank">markdown</a>
+        syntax. Please check before that your kata was not <a href="#">already posted</a>. You won't be able to edit
+        your entry once you sent this form.
+    </div>
+
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Post your own Kata</legend>
         <textarea name="kata" placeholder="Your Kata"></textarea>
         <input name="username" type="text" placeholder="Username"/>
-        <input name="website" type="text" placeholder="Website"/>
+        <input name="website" type="url" placeholder="Website"/>
         <input type="submit"/>
+        </fieldset>
     </form>
 
     <!-- Scripts -->

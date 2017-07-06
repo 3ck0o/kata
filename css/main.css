@@ -58,11 +58,56 @@ a:hover {
 }
 
 .kata .author {
-    opacity: 0.7;
+    opacity: 0.45;
     font-style: italic;
     font-size: 0.9em;
     width: 100%;
     text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.history {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 45px 15px 25px;
+    background-color: white;
+    border-left: 10px solid rgb(191, 161, 200);
+}
+
+.history .row {
+    transition: 0.4s;
+}
+
+.history .row:not(.header):hover {
+    background-color: rgb(255, 245, 255);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    color: #ababab;
+}
+
+.row.header {
+    color: #515151;
+}
+
+.align-center {
+    text-align:center;
+}
+
+.row > div {
+    padding: 5px 10px;
+}
+
+.w-2 {
+    width: 16.666666666%;
+}
+
+.w-10 {
+    width: 83.333333333%;
 }
 
 .warning {
@@ -128,8 +173,8 @@ fieldset {
     border: none;
     border-left: 10px solid #d6d6d6;
     background-color: white;
-    margin-left:0;
-    margin-right:0;
+    margin-left: 0;
+    margin-right: 0;
     padding: 15px 25px;
 }
 
